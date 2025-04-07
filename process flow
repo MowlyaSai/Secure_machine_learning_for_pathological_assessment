@@ -1,0 +1,31 @@
+## for executing the code follow this steps
+STEP-1:
+1.run random_forest code in google colab or jupyter notebook
+2.after running successfully it generates a .pkl file in which the whole code i.e random_forest code will be stored
+3.download this and store it in a new folder (let we named it as project_folder)
+*NOTE:before running this make sure that the libraries used here are installed properly or not
+
+STEP-2:(same process as above)
+1.run XGBoost code in google colab or jupyter notebook
+2.after running successfully it generates a .pkl file in which the whole code i.e XGBoost code will be stored
+3.download this and store it in a new folder (let we named it as project_folder)
+*NOTE:before running this make sure that the libraries used here are installed properly or not
+
+STEP-3:
+1.app.py code is stored in a notebook and save it as app.py extension and the file type is all files
+2.this file must be stored in the same location where above 2 ml models codes .pkl files are stored
+
+STEP-4:
+1.open command prompt
+2.install streamlit by using the command pip install streamlit
+3.after installed successfully change path into the folder where the above three files are saved
+4.now run command : streamlit run app.py
+
+STEP-5:
+A webpage is opened give the input values and click the button send for prediction 
+then it displays the final prediction output 
+
+NOTE:
+*Your data was encrypted before processing
+*Missing values were automatically handled
+*Actual values were never exposed to the system

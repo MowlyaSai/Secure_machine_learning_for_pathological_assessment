@@ -1,19 +1,3 @@
-try:
-    import tenseal as ts
-    tenseal_available = True
-except ImportError:
-    tenseal_available = False
-
-# Now, use `tenseal` only if it's available
-if tenseal_available:
-    # Your encryption logic with tenseal
-    pass
-else:
-    print("Tenseal not available. Running without encryption.")
-
-
-
-
 import streamlit as st
 import numpy as np
 import pickle

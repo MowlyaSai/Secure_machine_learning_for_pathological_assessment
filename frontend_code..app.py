@@ -237,5 +237,4 @@ def main():
                 except Exception as e:
                     st.error(f"Error during prediction: {str(e)}")
 
-if _name_ == "_main_":
-    main()
+

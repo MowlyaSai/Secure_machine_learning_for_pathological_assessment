@@ -1,3 +1,17 @@
+import os
+
+# Check if it's not running on Streamlit Cloud
+if os.getenv('STREMLIT_ENV') != "cloud":
+    import tenseal as ts
+    # Your encryption code goes here
+else:
+    # Skip encryption or handle differently in the cloud
+    print("Encryption skipped (Cloud environment)")
+
+# Rest of your code follows
+
+
+
 import streamlit as st
 import numpy as np
 import pickle

@@ -1,14 +1,16 @@
-import os
-
-# Check if it's not running on Streamlit Cloud
-if os.getenv('STREMLIT_ENV') != "cloud":
+try:
     import tenseal as ts
-    # Your encryption code goes here
-else:
-    # Skip encryption or handle differently in the cloud
-    print("Encryption skipped (Cloud environment)")
+    tenseal_available = True
+except ImportError:
+    tenseal_available = False
 
-# Rest of your code follows
+# Now, use `tenseal` only if it's available
+if tenseal_available:
+    # Your encryption logic with tenseal
+    pass
+else:
+    print("Tenseal not available. Running without encryption.")
+
 
 
 
